@@ -28,23 +28,41 @@
             border: 1px solid red;
             align-content: center;
         }
+        nav a:hover{ 
+            color:red;
+        }
+        nav a:first-child{
+            background-color:black;
+        }
+        nav a:not(:first-child){
+            margin-left :50px;
+        }
+         .total{
+            text-align:center ;
+        }
+       div.one{
+background-color:black;
+        }
+        table{
+            border-collapse: collapse;
+        }
     </style>
 </head>
 </body>
 <hearder>
     <nav>
         <a href="./css background.html" class="active-link"> css background page</a>
-    </nav>
+        <a href="./courses/mern.html">mern</a><br></nav>
 </hearder>
 <p> this id the index page .</p>
 <hr>
 <h2> Box Model</h2>
-<div class="box">
+<div class="box first">
     <div class="one"></div>
 
 </div>
 <div class="box">
-    <p>
+    <p class="red">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat numquam recusandae officiis placeat quisquam
         reiciendis. Cupiditate quis esse enim, consectetur voluptatem aperiam, incidunt itaque, necessitatibus provident
         consequatur quod voluptatum quaerat.
@@ -57,19 +75,26 @@
         <tr rowspan="4">
             <th>Name</th>
             <th>Quantity</th>
+            <th> Price</th>
         </tr>
         <tr>
             <td> Apple</td>
             <td>10</td>
+            <td>100</td>
         </tr>
         <tr>
             <td>Banana</td>
             <td>20</td>
+            <td>200</td>
         </tr>
     </thead>
+    <tfoot >
+        <td  colspan="2"  class=" total">Total</td>
+        <td>300</td>
+    </tfoot>
 </table>
 <hr>
-<table borde="1">
+<table border="1">
     <tr>
         <th>
             column1
@@ -93,6 +118,11 @@
         <td colspan="3"> Row 3 cell1</td>
     </tr>
 </table>
+<p class="frist">
+    This is amazing file .
+</p>
+<hr>
+
 
 </body>
 
